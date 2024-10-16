@@ -1,0 +1,76 @@
+---
+export interface Props {
+  id: number;
+  title: string;
+  description: string;
+  snippet: string;
+  language: string;
+}
+const { id, title, description, snippet, language } = Astro.props;
+---
+
+<div class="snippet-card">
+		<h2>
+			{title}
+		</h2>
+		<div class="snippet-info">
+		<p> Description: {description} </p>
+
+		</div>
+		<pre><button class="copy-button" id="button={id}"><i class="fa fa-clipboard"></i></button><code >{snippet}</code></pre>
+</div>
+
+<style>
+    .snippet-card {
+        box-shadow: 10px 10px 10px black;
+        background: rgba(50,50,50,0.3);
+
+
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+
+    .snippet-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    pre {
+        background: black;
+        padding: 0 1rem;
+        margin: 0;
+        white-space: pre;
+    }
+
+    code {
+        margin: 0;
+        padding: 0;
+    }
+
+    .copy-button {
+        font-size: 1rem;
+        align-self: first baseline;
+        outline: none;
+        border: none;
+        background: black;
+        color: white;
+        transition: 80ms ease-in-out;
+    }
+
+    .copy-button:hover {
+        color: red;
+        transition: 80ms ease-in-out;
+    }
+
+    p, h2 {
+        margin: 0;
+    }
+
+    i.fa-clipboard {
+        align-self: last baseline;
+    }
+</style>
