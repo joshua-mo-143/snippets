@@ -1,6 +1,6 @@
 -- Add up migration script here
 CREATE TABLE IF NOT EXISTS snippets (
-    id int generated always as identity primary key,
+    id bigint generated always as identity primary key,
     title varchar not null,
     description varchar not null,
     snippet varchar not null,

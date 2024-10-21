@@ -1,4 +1,6 @@
 /target
 .shuttle*
 Secrets*.toml
-frontend-dist/
+dist/
+
+node_modules

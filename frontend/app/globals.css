@@ -1,0 +1,167 @@
+.snippet-card {
+    background: rgba(50, 50, 50, 0.3);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.snippet-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+pre {
+    background: black;
+    padding: 0 1rem;
+    margin: 0;
+    white-space: pre;
+}
+
+code {
+    margin: 0;
+    padding: 0;
+}
+
+.copy-button {
+    font-size: 1rem;
+    align-self: first baseline;
+    outline: none;
+    border: none;
+    background: black;
+    color: white;
+    transition: 80ms ease-in-out;
+}
+
+.copy-button:hover {
+    color: red;
+    transition: 80ms ease-in-out;
+}
+
+p,
+h2 {
+    margin: 0;
+}
+
+i.fa-clipboard {
+    align-self: last baseline;
+}
+
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+    );
+}
+html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+}
+code {
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    background: rgba(50, 50, 50, 1);
+    border: none;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.submit-button {
+    cursor: default;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+    background: rgba(50, 50, 50, 0.7);
+    color: white;
+}
+
+.snippet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.searchbar {
+    padding: 2rem 0;
+}
+
+.searchbar,
+.searchbar > form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.searchbar > form > button[type="submit"] {
+    padding: 0.25rem 1rem;
+    font-size: 1.25rem;
+}
+
+.searchbar > form > input {
+    padding: 0.75rem 1.5rem;
+    min-width: 30rem;
+}
+
+pre > button {
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    outline: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
